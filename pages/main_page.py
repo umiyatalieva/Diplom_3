@@ -28,17 +28,17 @@ class MainPage(BasePage):
     @allure.step('Перейти на страницу Лента заказов')
     def go_to_orders_feed_page(self):
         self.click_on_element(HeaderLocators.ORDERS_FEED_BTN)
-        self.wait_load_url(Url.FEED)
+
 
     @allure.step('Перейти на страницу Личный кабинет')
     def go_to_profile(self):
         self.click_on_element(MainPageLocators.PROFILE_BTN)
-        self.wait_load_url(Url.PROFILE_PAGE)
+
 
     @allure.step('Перейти на страницу авторизации')
     def go_to_login(self):
         self.click_on_element(MainPageLocators.PROFILE_BTN)
-        self.wait_load_url(Url.LOGIN_PAGE)
+
 
     @allure.step('Добавить ингредиент в корзину')
     def add_ingredient_in_basket(self):

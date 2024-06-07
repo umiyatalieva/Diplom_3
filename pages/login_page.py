@@ -18,7 +18,7 @@ class LoginPage(BasePage):
         self.enter_text_in_element(LoginPageLocators.EMAIL_INPUT, user_data['email'])
         self.enter_text_in_element(LoginPageLocators.PASSWORD_INPUT, user_data['password'])
         self.click_on_element(LoginPageLocators.SUBMIT_BUTTON)
-        self.wait_load_url(Url.MAIN_PAGE)
+
 
     @allure.step('Перейти на страницу Восстановление пароля')
     def go_to_recovery_password(self):
