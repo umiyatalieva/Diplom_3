@@ -10,3 +10,4 @@ class MainPageLocators:
     PROFILE_BTN = ('xpath', '//p[text()="Личный Кабинет"]')  # кнопка перехода в личный кабинет
     MODAL_WINDOW = ('xpath', '//section[contains (@class, "modal_opened")]')  # модальное окно
     CLOSE_MODAL_WINDOW = ('xpath', '//button[contains(@class, "modal__close")]')  # кнопка закрытия модального окна
+    ORDERS_FEED_BTN = ('xpath', '//p[text()="Лента Заказов"]')  # кнопка "Лента Заказов"

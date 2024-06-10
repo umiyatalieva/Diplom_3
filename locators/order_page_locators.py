@@ -7,3 +7,4 @@ class OrdersPageLocators:
     ALL_ORDERS_LIST = ('xpath', '//p[contains(text(), "#")]')  # лента выполненных заказов
     ORDER_IN_WORK = ('xpath', '//ul[contains(@class, "orderListReady")]/li')  # заказ в работе
     MODAL_WINDOW = ('xpath', '//section[contains (@class, "modal_opened")]')  # модальное окно
+    CONSTRUCTOR_BTN = ('xpath', '//p[text()="Конструктор"]')  # кнопка "Конструктор"

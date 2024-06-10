@@ -15,7 +15,8 @@ class ProfilePage(BasePage):
 
     @allure.step('Перейти на страницу Лента заказов')
     def go_to_orders_feed_page(self):
-        self.click_on_element(HeaderLocators.ORDERS_FEED_BTN)
+        self.click_on_element(ProfilePageLocators.ORDERS_FEED_BTN)
+        self.wait_load_url(Url.FEED)
 
 
     @allure.step('Выйти из профиля')

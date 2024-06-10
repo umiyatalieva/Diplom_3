@@ -11,7 +11,8 @@ class OrderFeedPage(BasePage):
 
     @allure.step('Перейти на главную страницу')
     def go_to_main_page(self):
-        self.click_on_element(HeaderLocators.CONSTRUCTOR_BTN)
+        self.click_on_element(OrdersPageLocators.CONSTRUCTOR_BTN)
+        self.wait_load_url(Url.MAIN_PAGE)
 
 
     @allure.step('Открыть заказ')
